@@ -1,0 +1,29 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": null,
+        "Location": null,
+        "Name": "e3e0dc853dd745e4b2e1c6aa",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/e3e0dc853dd745e4b2e1c6aa",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "NetworkInititiative",
+          "NotScopes": null,
+          "Parameters": {},
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/1a7f4c67-947f-488d-b35f-2b34afffcded",
+          "Scope": "/providers/Microsoft.Management/managementGroups/mjr-landingzones"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/e3e0dc853dd745e4b2e1c6aa",
+        "ResourceName": "e3e0dc853dd745e4b2e1c6aa",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

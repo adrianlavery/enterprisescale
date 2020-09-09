@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "2d9e010b-d4a1-4465-a662-a4849e77d691",
+          "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+          "type": "SystemAssigned"
+        },
+        "Location": "eastus",
+        "Name": "9ebca7abd9eb4c72a864a527",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/policyAssignments/9ebca7abd9eb4c72a864a527",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "Enable Azure Monitor for Prod VMs - us",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics_1": {
+              "value": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/resourcegroups/mjr-mgmt/providers/microsoft.operationalinsights/workspaces/mjr-la-17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/55f3eceb-5573-4f18-9695-226972c6d74a",
+          "Scope": "/providers/Microsoft.Management/managementGroups/mjr-us-prod"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/policyAssignments/9ebca7abd9eb4c72a864a527",
+        "ResourceName": "9ebca7abd9eb4c72a864a527",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

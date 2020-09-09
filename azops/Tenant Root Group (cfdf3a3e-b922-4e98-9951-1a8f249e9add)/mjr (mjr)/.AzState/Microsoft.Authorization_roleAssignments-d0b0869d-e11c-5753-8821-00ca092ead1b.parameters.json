@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/roleAssignments/d0b0869d-e11c-5753-8821-00ca092ead1b",
+        "Name": "d0b0869d-e11c-5753-8821-00ca092ead1b",
+        "properties": {
+          "DisplayName": "Deploy-ASC-Security",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "06aee279-9afa-47e4-8d50-b64b441c5908",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+          "RoleDefinitionName": "Owner"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

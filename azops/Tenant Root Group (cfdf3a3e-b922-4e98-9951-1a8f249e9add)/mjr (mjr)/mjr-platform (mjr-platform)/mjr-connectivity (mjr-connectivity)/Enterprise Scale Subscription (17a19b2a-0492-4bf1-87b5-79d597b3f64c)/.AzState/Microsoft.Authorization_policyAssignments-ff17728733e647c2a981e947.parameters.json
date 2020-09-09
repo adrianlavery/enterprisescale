@@ -1,0 +1,29 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": null,
+        "Location": null,
+        "Name": "ff17728733e647c2a981e947",
+        "PolicyAssignmentId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policyAssignments/ff17728733e647c2a981e947",
+        "Properties": {
+          "Description": "Block LS/M series VMS outside UK and US",
+          "DisplayName": "Block LS/M series VMS outside UK and US",
+          "NotScopes": null,
+          "Parameters": {},
+          "PolicyDefinitionId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policySetDefinitions/5dc2ed95-06f6-4518-8e36-4cc3606524a1",
+          "Scope": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+        },
+        "ResourceId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policyAssignments/ff17728733e647c2a981e947",
+        "ResourceName": "ff17728733e647c2a981e947",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

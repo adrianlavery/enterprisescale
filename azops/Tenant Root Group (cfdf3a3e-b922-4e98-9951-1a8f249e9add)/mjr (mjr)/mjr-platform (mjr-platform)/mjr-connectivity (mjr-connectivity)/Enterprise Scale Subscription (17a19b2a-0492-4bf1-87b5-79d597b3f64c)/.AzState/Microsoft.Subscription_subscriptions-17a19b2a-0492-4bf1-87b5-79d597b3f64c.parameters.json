@@ -1,0 +1,256 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c",
+        "Name": "17a19b2a-0492-4bf1-87b5-79d597b3f64c",
+        "DisplayName": "Enterprise Scale Subscription",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [
+            {
+              "Name": "148120ce-93ea-47a1-b0e7-a363073592f6",
+              "ResourceId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policyDefinitions/148120ce-93ea-47a1-b0e7-a363073592f6",
+              "ResourceName": "148120ce-93ea-47a1-b0e7-a363073592f6",
+              "ResourceType": "Microsoft.Authorization/policyDefinitions",
+              "SubscriptionId": "17a19b2a-0492-4bf1-87b5-79d597b3f64c",
+              "PolicyDefinitionId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policyDefinitions/148120ce-93ea-47a1-b0e7-a363073592f6",
+              "Properties": {
+                "Description": "No M-Series or LS-Series VMs can be deployed outside of the UK and US​",
+                "DisplayName": "Block VMs",
+                "Mode": "All",
+                "Parameters": {},
+                "PolicyRule": {
+                  "if": {
+                    "allOf": [
+                      {
+                        "field": "type",
+                        "equals": "Microsoft.Compute/virtualMachines"
+                      },
+                      {
+                        "anyOf": [
+                          {
+                            "field": "Microsoft.Compute/virtualMachines/sku.name",
+                            "like": "Standard_M*"
+                          },
+                          {
+                            "field": "Microsoft.Compute/virtualMachines/sku.name",
+                            "like": "Standard_LS*"
+                          }
+                        ]
+                      },
+                      {
+                        "field": "location",
+                        "notIn": [
+                          "eastus",
+                          "uksouth",
+                          "ukwest",
+                          "eastus2"
+                        ]
+                      }
+                    ]
+                  },
+                  "then": {
+                    "effect": "deny"
+                  }
+                }
+              }
+            }
+          ],
+          "policySetDefinitions": [
+            {
+              "Name": "5dc2ed95-06f6-4518-8e36-4cc3606524a1",
+              "PolicySetDefinitionId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policySetDefinitions/5dc2ed95-06f6-4518-8e36-4cc3606524a1",
+              "Properties": {
+                "Description": "Block LS/M series VMS outside UK and US",
+                "DisplayName": "Block LS/M series VMS outside UK and US",
+                "Parameters": {},
+                "PolicyDefinitionGroups": null,
+                "PolicyDefinitions": [
+                  {
+                    "policyDefinitionReferenceId": "17311486172317237735",
+                    "policyDefinitionId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policyDefinitions/148120ce-93ea-47a1-b0e7-a363073592f6",
+                    "parameters": {},
+                    "groupNames": []
+                  }
+                ]
+              },
+              "ResourceId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policySetDefinitions/5dc2ed95-06f6-4518-8e36-4cc3606524a1",
+              "ResourceName": "5dc2ed95-06f6-4518-8e36-4cc3606524a1",
+              "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+              "SubscriptionId": "17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+            },
+            {
+              "Name": "db4469aa-001d-4ab2-bba7-614ffc25b341",
+              "PolicySetDefinitionId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policySetDefinitions/db4469aa-001d-4ab2-bba7-614ffc25b341",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Network Inititiative",
+                "Parameters": {},
+                "PolicyDefinitionGroups": null,
+                "PolicyDefinitions": [
+                  {
+                    "policyDefinitionReferenceId": "9811860691310122238",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policyDefinitions/Deny-Subnet-Without-Nsg",
+                    "parameters": {},
+                    "groupNames": []
+                  }
+                ]
+              },
+              "ResourceId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policySetDefinitions/db4469aa-001d-4ab2-bba7-614ffc25b341",
+              "ResourceName": "db4469aa-001d-4ab2-bba7-614ffc25b341",
+              "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+              "SubscriptionId": "17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+            }
+          ],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "DataProtectionSecurityCenter",
+              "PolicyAssignmentId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policyAssignments/DataProtectionSecurityCenter",
+              "Properties": {
+                "Description": "This policy assignment was automatically created by Azure Security Center",
+                "DisplayName": "ASC DataProtection (subscription: 17a19b2a-0492-4bf1-87b5-79d597b3f64c)",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/9cb3cc7a-b39b-4b82-bc89-e5a5d9ff7b97",
+                "Scope": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+              },
+              "ResourceId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policyAssignments/DataProtectionSecurityCenter",
+              "ResourceName": "DataProtectionSecurityCenter",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A1",
+                "tier": "Standard"
+              }
+            },
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "ff17728733e647c2a981e947",
+              "PolicyAssignmentId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policyAssignments/ff17728733e647c2a981e947",
+              "Properties": {
+                "Description": "Block LS/M series VMS outside UK and US",
+                "DisplayName": "Block LS/M series VMS outside UK and US",
+                "NotScopes": null,
+                "Parameters": {},
+                "PolicyDefinitionId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policySetDefinitions/5dc2ed95-06f6-4518-8e36-4cc3606524a1",
+                "Scope": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+              },
+              "ResourceId": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/policyAssignments/ff17728733e647c2a981e947",
+              "ResourceName": "ff17728733e647c2a981e947",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/roleAssignments/80fcb766-c97c-4582-9539-f3634c5249ec",
+              "Name": "80fcb766-c97c-4582-9539-f3634c5249ec",
+              "properties": {
+                "DisplayName": "mroyster",
+                "ObjectType": "User",
+                "PrincipalId": "144f9574-5c5a-4bb7-b0d9-414781f367d7",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/roleAssignments/0d60248f-5497-443c-8450-56c3a62a4aeb",
+              "Name": "0d60248f-5497-443c-8450-56c3a62a4aeb",
+              "properties": {
+                "DisplayName": "deploy",
+                "ObjectType": "User",
+                "PrincipalId": "421ab990-63b0-4d31-ae72-9daf1481f1c2",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/roleAssignments/120f0197-cc7f-4983-8a1f-102d421649f1",
+              "Name": "120f0197-cc7f-4983-8a1f-102d421649f1",
+              "properties": {
+                "DisplayName": "Adrian",
+                "ObjectType": "User",
+                "PrincipalId": "63b1e99f-7bfd-471a-a918-fda35920dcb5",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/roleAssignments/6e071c44-5a14-4b08-a960-9b4c93b5f6b3",
+              "Name": "6e071c44-5a14-4b08-a960-9b4c93b5f6b3",
+              "properties": {
+                "DisplayName": "deploy",
+                "ObjectType": "User",
+                "PrincipalId": "76c1adef-e8d5-4b56-b6a0-8d000753fb7a",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/roleAssignments/cc3f4a16-5b2b-48e7-806e-ce3c5de1defb",
+              "Name": "cc3f4a16-5b2b-48e7-806e-ce3c5de1defb",
+              "properties": {
+                "DisplayName": "Richard",
+                "ObjectType": "User",
+                "PrincipalId": "7feaea56-1343-437f-a8ef-2aefe2a09aae",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/roleAssignments/459dd010-a420-471f-ad48-88be0cbea864",
+              "Name": "459dd010-a420-471f-ad48-88be0cbea864",
+              "properties": {
+                "DisplayName": "Michael Royster",
+                "ObjectType": "User",
+                "PrincipalId": "eb0908bc-b9a9-4818-9d3d-3b145356408a",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/roleAssignments/b7eb5579-edf7-450e-9211-cc8d708a33fa",
+              "Name": "b7eb5579-edf7-450e-9211-cc8d708a33fa",
+              "properties": {
+                "DisplayName": "mroyster",
+                "ObjectType": "User",
+                "PrincipalId": "144f9574-5c5a-4bb7-b0d9-414781f367d7",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/roleAssignments/22bdf287-ab9b-4219-b812-f4e301a97371",
+              "Name": "22bdf287-ab9b-4219-b812-f4e301a97371",
+              "properties": {
+                "DisplayName": "Michael Royster",
+                "ObjectType": "User",
+                "PrincipalId": "eb0908bc-b9a9-4818-9d3d-3b145356408a",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

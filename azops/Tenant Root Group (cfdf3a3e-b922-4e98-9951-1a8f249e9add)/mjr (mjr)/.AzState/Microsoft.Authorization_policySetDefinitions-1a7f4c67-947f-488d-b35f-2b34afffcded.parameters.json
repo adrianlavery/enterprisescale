@@ -1,0 +1,30 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "1a7f4c67-947f-488d-b35f-2b34afffcded",
+        "PolicySetDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/1a7f4c67-947f-488d-b35f-2b34afffcded",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "NetworkInititiative",
+          "Parameters": {},
+          "PolicyDefinitionGroups": null,
+          "PolicyDefinitions": [
+            {
+              "policyDefinitionReferenceId": "9811860691310122238",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policyDefinitions/Deny-Subnet-Without-Nsg",
+              "parameters": {},
+              "groupNames": []
+            }
+          ]
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/1a7f4c67-947f-488d-b35f-2b34afffcded",
+        "ResourceName": "1a7f4c67-947f-488d-b35f-2b34afffcded",
+        "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+        "SubscriptionId": null
+      }
+    }
+  }
+}

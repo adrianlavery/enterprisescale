@@ -1,0 +1,206 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+        "TenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+        "DisplayName": "Tenant Root Group",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": null,
+        "ParentName": null,
+        "ParentDisplayName": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/mjr",
+            "Name": "mjr",
+            "DisplayName": "mjr",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-landingzones",
+                "Name": "mjr-landingzones",
+                "DisplayName": "mjr-landingzones",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/mjr-asia",
+                    "Name": "mjr-asia",
+                    "DisplayName": "mjr-asia",
+                    "Children": [
+                      {
+                        "Type": "/providers/Microsoft.Management/managementGroups",
+                        "Id": "/providers/Microsoft.Management/managementGroups/mjr-asia-prod",
+                        "Name": "mjr-asia-prod",
+                        "DisplayName": "mjr-asia-prod",
+                        "Children": null
+                      },
+                      {
+                        "Type": "/providers/Microsoft.Management/managementGroups",
+                        "Id": "/providers/Microsoft.Management/managementGroups/mjr-asia-nonprod",
+                        "Name": "mjr-asia-nonprod",
+                        "DisplayName": "mjr-asia-nonprod",
+                        "Children": null
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/mjr-global",
+                    "Name": "mjr-global",
+                    "DisplayName": "mjr-global",
+                    "Children": [
+                      {
+                        "Type": "/providers/Microsoft.Management/managementGroups",
+                        "Id": "/providers/Microsoft.Management/managementGroups/mjr-global-prod",
+                        "Name": "mjr-global-prod",
+                        "DisplayName": "mjr-global-prod",
+                        "Children": null
+                      },
+                      {
+                        "Type": "/providers/Microsoft.Management/managementGroups",
+                        "Id": "/providers/Microsoft.Management/managementGroups/mjr-global-nonprod",
+                        "Name": "mjr-global-nonprod",
+                        "DisplayName": "mjr-global-nonprod",
+                        "Children": null
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/mjr-uk",
+                    "Name": "mjr-uk",
+                    "DisplayName": "mjr-uk",
+                    "Children": [
+                      {
+                        "Type": "/providers/Microsoft.Management/managementGroups",
+                        "Id": "/providers/Microsoft.Management/managementGroups/mjr-uk-prod",
+                        "Name": "mjr-uk-prod",
+                        "DisplayName": "mjr-uk-prod",
+                        "Children": null
+                      },
+                      {
+                        "Type": "/providers/Microsoft.Management/managementGroups",
+                        "Id": "/providers/Microsoft.Management/managementGroups/mjr-uk-nonprod",
+                        "Name": "mjr-uk-nonprod",
+                        "DisplayName": "mjr-uk-nonprod",
+                        "Children": null
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/mjr-germany",
+                    "Name": "mjr-germany",
+                    "DisplayName": "mjr-germany",
+                    "Children": [
+                      {
+                        "Type": "/providers/Microsoft.Management/managementGroups",
+                        "Id": "/providers/Microsoft.Management/managementGroups/mjr-germany-prod",
+                        "Name": "mjr-germany-prod",
+                        "DisplayName": "mjr-germany-prod",
+                        "Children": null
+                      },
+                      {
+                        "Type": "/providers/Microsoft.Management/managementGroups",
+                        "Id": "/providers/Microsoft.Management/managementGroups/mjr-germany-nonprod",
+                        "Name": "mjr-germany-nonprod",
+                        "DisplayName": "mjr-germany-nonprod",
+                        "Children": null
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/mjr-us",
+                    "Name": "mjr-us",
+                    "DisplayName": "mjr-us",
+                    "Children": [
+                      {
+                        "Type": "/providers/Microsoft.Management/managementGroups",
+                        "Id": "/providers/Microsoft.Management/managementGroups/mjr-us-prod",
+                        "Name": "mjr-us-prod",
+                        "DisplayName": "mjr-us-prod",
+                        "Children": null
+                      },
+                      {
+                        "Type": "/providers/Microsoft.Management/managementGroups",
+                        "Id": "/providers/Microsoft.Management/managementGroups/mjr-us-nonprod",
+                        "Name": "mjr-us-nonprod",
+                        "DisplayName": "mjr-us-nonprod",
+                        "Children": null
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-decomissioned",
+                "Name": "mjr-decomissioned",
+                "DisplayName": "mjr-decomissioned",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-sandboxes",
+                "Name": "mjr-sandboxes",
+                "DisplayName": "mjr-sandboxes",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-platform",
+                "Name": "mjr-platform",
+                "DisplayName": "mjr-platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/mjr-management",
+                    "Name": "mjr-management",
+                    "DisplayName": "mjr-management",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/mjr-identity",
+                    "Name": "mjr-identity",
+                    "DisplayName": "mjr-identity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/mjr-connectivity",
+                    "Name": "mjr-connectivity",
+                    "DisplayName": "mjr-connectivity",
+                    "Children": [
+                      {
+                        "Type": "/subscriptions",
+                        "Id": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c",
+                        "Name": "17a19b2a-0492-4bf1-87b5-79d597b3f64c",
+                        "DisplayName": "Enterprise Scale Subscription",
+                        "Children": null
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}

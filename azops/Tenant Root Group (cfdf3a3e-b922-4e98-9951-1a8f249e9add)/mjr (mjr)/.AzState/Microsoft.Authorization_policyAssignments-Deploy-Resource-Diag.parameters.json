@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "c2838383-ec09-4d5a-bca0-1932613f21d1",
+          "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+          "type": "SystemAssigned"
+        },
+        "Location": "westeurope",
+        "Name": "Deploy-Resource-Diag",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policyAssignments/Deploy-Resource-Diag",
+        "Properties": {
+          "Description": "Deploy-Resource-Diag",
+          "DisplayName": "Deploy-Resource-Diag",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics": {
+              "value": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/resourcegroups/mjr-mgmt/providers/microsoft.operationalinsights/workspaces/mjr-la-17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/Deploy-Diag-LogAnalytics",
+          "Scope": "/providers/Microsoft.Management/managementGroups/mjr"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policyAssignments/Deploy-Resource-Diag",
+        "ResourceName": "Deploy-Resource-Diag",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

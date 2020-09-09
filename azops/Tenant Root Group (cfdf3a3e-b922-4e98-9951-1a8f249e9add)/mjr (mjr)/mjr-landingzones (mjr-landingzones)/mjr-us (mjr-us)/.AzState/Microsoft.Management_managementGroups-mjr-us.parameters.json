@@ -1,0 +1,56 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/mjr-us",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "mjr-us",
+        "TenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+        "DisplayName": "mjr-us",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones",
+        "ParentName": "mjr-landingzones",
+        "ParentDisplayName": "mjr-landingzones",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/mjr-us-prod",
+            "Name": "mjr-us-prod",
+            "DisplayName": "mjr-us-prod",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/mjr-us-nonprod",
+            "Name": "mjr-us-nonprod",
+            "DisplayName": "mjr-us-nonprod",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-us/providers/Microsoft.Authorization/roleAssignments/7ac473af-086f-487b-9fa6-c6652a4954b2",
+              "Name": "7ac473af-086f-487b-9fa6-c6652a4954b2",
+              "properties": {
+                "DisplayName": "mroyster",
+                "ObjectType": "User",
+                "PrincipalId": "144f9574-5c5a-4bb7-b0d9-414781f367d7",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

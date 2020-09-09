@@ -1,0 +1,49 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "c17461bb-a6d2-45b0-8f91-a6df383baa5d",
+          "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+          "type": "SystemAssigned"
+        },
+        "Location": "westeurope",
+        "Name": "Deploy-Log-Analytics",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "Properties": {
+          "Description": "Deploy-Log-Analytics",
+          "DisplayName": "Deploy-Log-Analytics",
+          "NotScopes": null,
+          "Parameters": {
+            "automationAccountName": {
+              "value": "mjr-a-17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+            },
+            "automationRegion": {
+              "value": "westeurope"
+            },
+            "rgName": {
+              "value": "mjr-mgmt"
+            },
+            "workspaceName": {
+              "value": "mjr-la-17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+            },
+            "workspaceRegion": {
+              "value": "westeurope"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+          "Scope": "/providers/Microsoft.Management/managementGroups/mjr-management"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "ResourceName": "Deploy-Log-Analytics",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

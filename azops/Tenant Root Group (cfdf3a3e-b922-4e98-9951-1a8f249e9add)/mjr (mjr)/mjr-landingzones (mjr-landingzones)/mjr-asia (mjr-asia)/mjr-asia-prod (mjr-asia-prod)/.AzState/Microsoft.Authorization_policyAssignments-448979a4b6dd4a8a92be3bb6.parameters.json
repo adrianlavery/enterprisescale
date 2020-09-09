@@ -1,0 +1,33 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "27d65812-0e8c-4ab5-8a32-457d5158463b",
+          "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+          "type": "SystemAssigned"
+        },
+        "Location": "uksouth",
+        "Name": "448979a4b6dd4a8a92be3bb6",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-asia-prod/providers/Microsoft.Authorization/policyAssignments/448979a4b6dd4a8a92be3bb6",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "Production VM - deployIfNotExist - asia",
+          "NotScopes": null,
+          "Parameters": {},
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/dec5995d-17ad-406a-8842-2f4d1526ed1a",
+          "Scope": "/providers/Microsoft.Management/managementGroups/mjr-asia-prod"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-asia-prod/providers/Microsoft.Authorization/policyAssignments/448979a4b6dd4a8a92be3bb6",
+        "ResourceName": "448979a4b6dd4a8a92be3bb6",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

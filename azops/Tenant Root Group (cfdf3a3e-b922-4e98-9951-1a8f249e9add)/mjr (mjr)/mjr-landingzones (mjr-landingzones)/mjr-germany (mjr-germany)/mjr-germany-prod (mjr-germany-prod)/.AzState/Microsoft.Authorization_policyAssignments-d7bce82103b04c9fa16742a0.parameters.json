@@ -1,0 +1,33 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "1f1cd1b6-729d-4e3a-b7de-8357f3d2af0f",
+          "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+          "type": "SystemAssigned"
+        },
+        "Location": "germanywestcentral",
+        "Name": "d7bce82103b04c9fa16742a0",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-germany-prod/providers/Microsoft.Authorization/policyAssignments/d7bce82103b04c9fa16742a0",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "Production VM - deployIfNotExist - germany",
+          "NotScopes": null,
+          "Parameters": {},
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/dec5995d-17ad-406a-8842-2f4d1526ed1a",
+          "Scope": "/providers/Microsoft.Management/managementGroups/mjr-germany-prod"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-germany-prod/providers/Microsoft.Authorization/policyAssignments/d7bce82103b04c9fa16742a0",
+        "ResourceName": "d7bce82103b04c9fa16742a0",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

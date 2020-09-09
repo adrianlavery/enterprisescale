@@ -1,0 +1,41 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/mjr-decomissioned",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "mjr-decomissioned",
+        "TenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+        "DisplayName": "mjr-decomissioned",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/mjr",
+        "ParentName": "mjr",
+        "ParentDisplayName": "mjr",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-decomissioned/providers/Microsoft.Authorization/roleAssignments/698078d5-a8c7-4086-8384-e53f17a1c272",
+              "Name": "698078d5-a8c7-4086-8384-e53f17a1c272",
+              "properties": {
+                "DisplayName": "mroyster",
+                "ObjectType": "User",
+                "PrincipalId": "144f9574-5c5a-4bb7-b0d9-414781f367d7",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

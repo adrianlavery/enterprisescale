@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/mjr-global-prod/providers/Microsoft.Authorization/roleAssignments/2d580aaa-da1e-424f-b351-8451bb3ecd56",
+        "Name": "2d580aaa-da1e-424f-b351-8451bb3ecd56",
+        "properties": {
+          "DisplayName": "64615b0e8ff64f3bbd578a75",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "20f82bb5-ad64-47c7-9802-0f2fa1d8dd5b",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

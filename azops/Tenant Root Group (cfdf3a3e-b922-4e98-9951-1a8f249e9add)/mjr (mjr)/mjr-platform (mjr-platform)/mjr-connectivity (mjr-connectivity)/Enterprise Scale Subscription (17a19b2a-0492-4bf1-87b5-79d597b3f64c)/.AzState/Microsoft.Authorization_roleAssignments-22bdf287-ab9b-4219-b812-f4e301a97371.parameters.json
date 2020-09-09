@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/providers/Microsoft.Authorization/roleAssignments/22bdf287-ab9b-4219-b812-f4e301a97371",
+        "Name": "22bdf287-ab9b-4219-b812-f4e301a97371",
+        "properties": {
+          "DisplayName": "Michael Royster",
+          "ObjectType": "User",
+          "PrincipalId": "eb0908bc-b9a9-4818-9d3d-3b145356408a",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "RoleDefinitionName": "Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

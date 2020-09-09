@@ -1,0 +1,30 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "dec5995d-17ad-406a-8842-2f4d1526ed1a",
+        "PolicySetDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/dec5995d-17ad-406a-8842-2f4d1526ed1a",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "Production VM - deployIfNotExist",
+          "Parameters": {},
+          "PolicyDefinitionGroups": null,
+          "PolicyDefinitions": [
+            {
+              "policyDefinitionReferenceId": "14438155975582301414",
+              "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policyDefinitions/Deploy-AzureBackup-on-VM",
+              "parameters": {},
+              "groupNames": []
+            }
+          ]
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/dec5995d-17ad-406a-8842-2f4d1526ed1a",
+        "ResourceName": "dec5995d-17ad-406a-8842-2f4d1526ed1a",
+        "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+        "SubscriptionId": null
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/mjr-us-prod",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "mjr-us-prod",
+        "TenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+        "DisplayName": "mjr-us-prod",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/mjr-us",
+        "ParentName": "mjr-us",
+        "ParentDisplayName": "mjr-us",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": {
+                "principalId": "2d9e010b-d4a1-4465-a662-a4849e77d691",
+                "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "9ebca7abd9eb4c72a864a527",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/policyAssignments/9ebca7abd9eb4c72a864a527",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Enable Azure Monitor for Prod VMs - us",
+                "NotScopes": null,
+                "Parameters": {
+                  "logAnalytics_1": {
+                    "value": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/resourcegroups/mjr-mgmt/providers/microsoft.operationalinsights/workspaces/mjr-la-17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/55f3eceb-5573-4f18-9695-226972c6d74a",
+                "Scope": "/providers/Microsoft.Management/managementGroups/mjr-us-prod"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/policyAssignments/9ebca7abd9eb4c72a864a527",
+              "ResourceName": "9ebca7abd9eb4c72a864a527",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "dbfc442f0f154c2f9581c46b",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/policyAssignments/dbfc442f0f154c2f9581c46b",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Production VMs - us",
+                "NotScopes": null,
+                "Parameters": {},
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/7b4aa7e8-3656-4deb-954b-4367b4b541e6",
+                "Scope": "/providers/Microsoft.Management/managementGroups/mjr-us-prod"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/policyAssignments/dbfc442f0f154c2f9581c46b",
+              "ResourceName": "dbfc442f0f154c2f9581c46b",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "da0e0434-89b1-4135-91f3-ae58521126fc",
+                "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "e677381a21fb48119f4b1d34",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/policyAssignments/e677381a21fb48119f4b1d34",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "Production VM - deployIfNotExist - us",
+                "NotScopes": null,
+                "Parameters": {},
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/dec5995d-17ad-406a-8842-2f4d1526ed1a",
+                "Scope": "/providers/Microsoft.Management/managementGroups/mjr-us-prod"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/policyAssignments/e677381a21fb48119f4b1d34",
+              "ResourceName": "e677381a21fb48119f4b1d34",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/roleAssignments/ddf045a3-ac3f-4101-8c7b-23761ee104de",
+              "Name": "ddf045a3-ac3f-4101-8c7b-23761ee104de",
+              "properties": {
+                "DisplayName": "mroyster",
+                "ObjectType": "User",
+                "PrincipalId": "144f9574-5c5a-4bb7-b0d9-414781f367d7",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/roleAssignments/36725bc2-c691-45a5-8106-44a201423207",
+              "Name": "36725bc2-c691-45a5-8106-44a201423207",
+              "properties": {
+                "DisplayName": "9ebca7abd9eb4c72a864a527",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "2d9e010b-d4a1-4465-a662-a4849e77d691",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+                "RoleDefinitionName": "Log Analytics Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/roleAssignments/36725bc2-c691-45a5-8106-44a201423205",
+              "Name": "36725bc2-c691-45a5-8106-44a201423205",
+              "properties": {
+                "DisplayName": "9ebca7abd9eb4c72a864a527",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "2d9e010b-d4a1-4465-a662-a4849e77d691",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+                "RoleDefinitionName": "Log Analytics Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-us-prod/providers/Microsoft.Authorization/roleAssignments/2282556c-d734-4221-ada8-d0783532af0c",
+              "Name": "2282556c-d734-4221-ada8-d0783532af0c",
+              "properties": {
+                "DisplayName": "e677381a21fb48119f4b1d34",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "da0e0434-89b1-4135-91f3-ae58521126fc",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+                "RoleDefinitionName": "Contributor"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/mjr-management",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "mjr-management",
+        "TenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+        "DisplayName": "mjr-management",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/mjr-platform",
+        "ParentName": "mjr-platform",
+        "ParentDisplayName": "mjr-platform",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": {
+                "principalId": "c17461bb-a6d2-45b0-8f91-a6df383baa5d",
+                "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+                "type": "SystemAssigned"
+              },
+              "Location": "westeurope",
+              "Name": "Deploy-Log-Analytics",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+              "Properties": {
+                "Description": "Deploy-Log-Analytics",
+                "DisplayName": "Deploy-Log-Analytics",
+                "NotScopes": null,
+                "Parameters": {
+                  "automationAccountName": {
+                    "value": "mjr-a-17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+                  },
+                  "automationRegion": {
+                    "value": "westeurope"
+                  },
+                  "rgName": {
+                    "value": "mjr-mgmt"
+                  },
+                  "workspaceName": {
+                    "value": "mjr-la-17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+                  },
+                  "workspaceRegion": {
+                    "value": "westeurope"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+                "Scope": "/providers/Microsoft.Management/managementGroups/mjr-management"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+              "ResourceName": "Deploy-Log-Analytics",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-management/providers/Microsoft.Authorization/roleAssignments/8dc3850a-5ae6-4238-ad50-5b389e2cbdcc",
+              "Name": "8dc3850a-5ae6-4238-ad50-5b389e2cbdcc",
+              "properties": {
+                "DisplayName": "mroyster",
+                "ObjectType": "User",
+                "PrincipalId": "144f9574-5c5a-4bb7-b0d9-414781f367d7",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-management/providers/Microsoft.Authorization/roleAssignments/93339119-f237-5f7e-acc7-d4ead9613cd5",
+              "Name": "93339119-f237-5f7e-acc7-d4ead9613cd5",
+              "properties": {
+                "DisplayName": "Deploy-Log-Analytics",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "c17461bb-a6d2-45b0-8f91-a6df383baa5d",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

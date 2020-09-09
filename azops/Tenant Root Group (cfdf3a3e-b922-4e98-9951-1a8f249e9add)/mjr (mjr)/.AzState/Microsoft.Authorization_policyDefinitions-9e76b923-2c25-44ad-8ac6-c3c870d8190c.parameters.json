@@ -1,0 +1,67 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "9e76b923-2c25-44ad-8ac6-c3c870d8190c",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policyDefinitions/9e76b923-2c25-44ad-8ac6-c3c870d8190c",
+        "ResourceName": "9e76b923-2c25-44ad-8ac6-c3c870d8190c",
+        "ResourceType": "Microsoft.Authorization/policyDefinitions",
+        "SubscriptionId": null,
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policyDefinitions/9e76b923-2c25-44ad-8ac6-c3c870d8190c",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "enforce AHUB",
+          "Mode": "All",
+          "Parameters": {},
+          "PolicyRule": {
+            "if": {
+              "allOf": [
+                {
+                  "field": "type",
+                  "in": [
+                    "Microsoft.Compute/virtualMachines",
+                    "Microsoft.Compute/VirtualMachineScaleSets"
+                  ]
+                },
+                {
+                  "field": "Microsoft.Compute/imagePublisher",
+                  "equals": "MicrosoftWindowsServer"
+                },
+                {
+                  "field": "Microsoft.Compute/imageOffer",
+                  "equals": "WindowsServer"
+                },
+                {
+                  "field": "Microsoft.Compute/imageSKU",
+                  "in": [
+                    "2008-R2-SP1",
+                    "2008-R2-SP1-smalldisk",
+                    "2012-Datacenter",
+                    "2012-Datacenter-smalldisk",
+                    "2012-R2-Datacenter",
+                    "2012-R2-Datacenter-smalldisk",
+                    "2016-Datacenter",
+                    "2016-Datacenter-Server-Core",
+                    "2016-Datacenter-Server-Core-smalldisk",
+                    "2016-Datacenter-smalldisk",
+                    "2016-Datacenter-with-Containers",
+                    "2016-Datacenter-with-RDSH"
+                  ]
+                },
+                {
+                  "field": "Microsoft.Compute/licenseType",
+                  "notEquals": "Windows_Server"
+                }
+              ]
+            },
+            "then": {
+              "effect": "deny"
+            }
+          }
+        }
+      }
+    }
+  }
+}

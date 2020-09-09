@@ -1,0 +1,29 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": null,
+        "Location": null,
+        "Name": "4bdcdadbca454550b16e0e55",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-global-prod/providers/Microsoft.Authorization/policyAssignments/4bdcdadbca454550b16e0e55",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "Production VMs - global",
+          "NotScopes": null,
+          "Parameters": {},
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/7b4aa7e8-3656-4deb-954b-4367b4b541e6",
+          "Scope": "/providers/Microsoft.Management/managementGroups/mjr-global-prod"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-global-prod/providers/Microsoft.Authorization/policyAssignments/4bdcdadbca454550b16e0e55",
+        "ResourceName": "4bdcdadbca454550b16e0e55",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

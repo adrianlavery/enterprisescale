@@ -1,0 +1,348 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/mjr-landingzones",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "mjr-landingzones",
+        "TenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+        "DisplayName": "mjr-landingzones",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/mjr",
+        "ParentName": "mjr",
+        "ParentDisplayName": "mjr",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/mjr-asia",
+            "Name": "mjr-asia",
+            "DisplayName": "mjr-asia",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-asia-prod",
+                "Name": "mjr-asia-prod",
+                "DisplayName": "mjr-asia-prod",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-asia-nonprod",
+                "Name": "mjr-asia-nonprod",
+                "DisplayName": "mjr-asia-nonprod",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/mjr-global",
+            "Name": "mjr-global",
+            "DisplayName": "mjr-global",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-global-prod",
+                "Name": "mjr-global-prod",
+                "DisplayName": "mjr-global-prod",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-global-nonprod",
+                "Name": "mjr-global-nonprod",
+                "DisplayName": "mjr-global-nonprod",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/mjr-uk",
+            "Name": "mjr-uk",
+            "DisplayName": "mjr-uk",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-uk-prod",
+                "Name": "mjr-uk-prod",
+                "DisplayName": "mjr-uk-prod",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-uk-nonprod",
+                "Name": "mjr-uk-nonprod",
+                "DisplayName": "mjr-uk-nonprod",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/mjr-germany",
+            "Name": "mjr-germany",
+            "DisplayName": "mjr-germany",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-germany-prod",
+                "Name": "mjr-germany-prod",
+                "DisplayName": "mjr-germany-prod",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-germany-nonprod",
+                "Name": "mjr-germany-nonprod",
+                "DisplayName": "mjr-germany-nonprod",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/mjr-us",
+            "Name": "mjr-us",
+            "DisplayName": "mjr-us",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-us-prod",
+                "Name": "mjr-us-prod",
+                "DisplayName": "mjr-us-prod",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/mjr-us-nonprod",
+                "Name": "mjr-us-nonprod",
+                "DisplayName": "mjr-us-nonprod",
+                "Children": null
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": "westeurope",
+              "Name": "Deny-IP-forwarding",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-forwarding",
+              "Properties": {
+                "Description": "Deny-IP-Forwarding",
+                "DisplayName": "Deny-IP-Forwarding",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/88c0b9da-ce96-4b03-9635-f29a937e2900",
+                "Scope": "/providers/Microsoft.Management/managementGroups/mjr-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-forwarding",
+              "ResourceName": "Deny-IP-forwarding",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": null,
+              "Location": "westeurope",
+              "Name": "Deny-Storage-http",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Storage-http",
+              "Properties": {
+                "Description": "Enforce-Secure-Storage",
+                "DisplayName": "Enforce-Secure-Storage",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/404c3081-a854-4457-ae30-26a93ef643f9",
+                "Scope": "/providers/Microsoft.Management/managementGroups/mjr-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Storage-http",
+              "ResourceName": "Deny-Storage-http",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": null,
+              "Location": "westeurope",
+              "Name": "Deny-Subnet-Without-Nsg",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
+              "Properties": {
+                "Description": "Deny-Subnet-Without-Nsg",
+                "DisplayName": "Deny-Subnet-Without-Nsg",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policyDefinitions/Deny-Subnet-Without-Nsg",
+                "Scope": "/providers/Microsoft.Management/managementGroups/mjr-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
+              "ResourceName": "Deny-Subnet-Without-Nsg",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "c7866f44-9b4d-4a24-821f-c79817e49e7f",
+                "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+                "type": "SystemAssigned"
+              },
+              "Location": "westeurope",
+              "Name": "Deploy-SQL-DB-Auditing",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
+              "Properties": {
+                "Description": "Deploy-SQL-Audit",
+                "DisplayName": "Deploy-SQL-Audit",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a6fb4358-5bf4-4ad7-ba82-2cd2f41ce5e9",
+                "Scope": "/providers/Microsoft.Management/managementGroups/mjr-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
+              "ResourceName": "Deploy-SQL-DB-Auditing",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "26e8dc25-57f9-4c69-bfdb-4cb55b032fc3",
+                "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+                "type": "SystemAssigned"
+              },
+              "Location": "westeurope",
+              "Name": "Deploy-VM-Backup",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
+              "Properties": {
+                "Description": "Deploy-VM-Backup",
+                "DisplayName": "Deploy-VM-Backup",
+                "NotScopes": null,
+                "Parameters": {},
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policyDefinitions/Deploy-AzureBackup-on-VM",
+                "Scope": "/providers/Microsoft.Management/managementGroups/mjr-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
+              "ResourceName": "Deploy-VM-Backup",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "e3e0dc853dd745e4b2e1c6aa",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/e3e0dc853dd745e4b2e1c6aa",
+              "Properties": {
+                "Description": null,
+                "DisplayName": "NetworkInititiative",
+                "NotScopes": null,
+                "Parameters": {},
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/mjr/providers/Microsoft.Authorization/policySetDefinitions/1a7f4c67-947f-488d-b35f-2b34afffcded",
+                "Scope": "/providers/Microsoft.Management/managementGroups/mjr-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/e3e0dc853dd745e4b2e1c6aa",
+              "ResourceName": "e3e0dc853dd745e4b2e1c6aa",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "2c11be63-b2da-4e1b-91ca-b0ec61684da8",
+                "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+                "type": "SystemAssigned"
+              },
+              "Location": "westeurope",
+              "Name": "Enforce-SQL-Encryption",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-SQL-Encryption",
+              "Properties": {
+                "Description": "Deploy-SQL-Security",
+                "DisplayName": "Deploy-SQL-Security",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/86a912f6-9a06-4e26-b447-11b16ba8659f",
+                "Scope": "/providers/Microsoft.Management/managementGroups/mjr-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-SQL-Encryption",
+              "ResourceName": "Enforce-SQL-Encryption",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": [
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/roleAssignments/136da9f3-5897-4ae7-a20a-bbc44c3c7b54",
+              "Name": "136da9f3-5897-4ae7-a20a-bbc44c3c7b54",
+              "properties": {
+                "DisplayName": "mroyster",
+                "ObjectType": "User",
+                "PrincipalId": "144f9574-5c5a-4bb7-b0d9-414781f367d7",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/roleAssignments/1cc8b370-9938-53ac-861f-bdb2209f8a0d",
+              "Name": "1cc8b370-9938-53ac-861f-bdb2209f8a0d",
+              "properties": {
+                "DisplayName": "Deploy-VM-Backup",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "26e8dc25-57f9-4c69-bfdb-4cb55b032fc3",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/roleAssignments/92b27ef7-184d-50a4-96c7-e6e605e4e9cc",
+              "Name": "92b27ef7-184d-50a4-96c7-e6e605e4e9cc",
+              "properties": {
+                "DisplayName": "Enforce-SQL-Encryption",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "2c11be63-b2da-4e1b-91ca-b0ec61684da8",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            },
+            {
+              "Id": "/providers/Microsoft.Management/managementGroups/mjr-landingzones/providers/Microsoft.Authorization/roleAssignments/866f4615-d545-5f04-acbb-88888f63019f",
+              "Name": "866f4615-d545-5f04-acbb-88888f63019f",
+              "properties": {
+                "DisplayName": "Deploy-SQL-DB-Auditing",
+                "ObjectType": "ServicePrincipal",
+                "PrincipalId": "c7866f44-9b4d-4a24-821f-c79817e49e7f",
+                "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+                "RoleDefinitionName": "Owner"
+              },
+              "ResourceType": "Microsoft.Authorization/roleAssignments"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

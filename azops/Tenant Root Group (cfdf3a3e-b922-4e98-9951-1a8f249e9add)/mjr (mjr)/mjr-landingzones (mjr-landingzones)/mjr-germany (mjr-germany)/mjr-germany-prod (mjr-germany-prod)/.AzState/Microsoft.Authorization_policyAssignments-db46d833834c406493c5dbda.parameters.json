@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "5e71a255-4a45-4233-83d4-f1bb695541cc",
+          "tenantId": "cfdf3a3e-b922-4e98-9951-1a8f249e9add",
+          "type": "SystemAssigned"
+        },
+        "Location": "germanywestcentral",
+        "Name": "db46d833834c406493c5dbda",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/mjr-germany-prod/providers/Microsoft.Authorization/policyAssignments/db46d833834c406493c5dbda",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "Enable Azure Monitor for Prod VMs - germany",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics_1": {
+              "value": "/subscriptions/17a19b2a-0492-4bf1-87b5-79d597b3f64c/resourcegroups/mjr-mgmt/providers/microsoft.operationalinsights/workspaces/mjr-la-17a19b2a-0492-4bf1-87b5-79d597b3f64c"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/55f3eceb-5573-4f18-9695-226972c6d74a",
+          "Scope": "/providers/Microsoft.Management/managementGroups/mjr-germany-prod"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/mjr-germany-prod/providers/Microsoft.Authorization/policyAssignments/db46d833834c406493c5dbda",
+        "ResourceName": "db46d833834c406493c5dbda",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

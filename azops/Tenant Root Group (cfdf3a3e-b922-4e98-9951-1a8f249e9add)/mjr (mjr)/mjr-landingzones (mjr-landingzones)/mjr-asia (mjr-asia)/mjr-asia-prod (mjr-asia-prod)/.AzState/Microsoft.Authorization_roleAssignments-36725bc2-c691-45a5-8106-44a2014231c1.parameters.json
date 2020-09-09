@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/mjr-asia-prod/providers/Microsoft.Authorization/roleAssignments/36725bc2-c691-45a5-8106-44a2014231c1",
+        "Name": "36725bc2-c691-45a5-8106-44a2014231c1",
+        "properties": {
+          "DisplayName": "b695f8a3cdac4779ad43eb4d",
+          "ObjectType": "ServicePrincipal",
+          "PrincipalId": "86889c89-e4be-43bd-aeea-d4fd5d11e299",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+          "RoleDefinitionName": "Log Analytics Contributor"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}

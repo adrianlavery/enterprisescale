@@ -1,0 +1,20 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/mjr-global-prod/providers/Microsoft.Authorization/roleAssignments/21ca7617-1516-4174-8446-553a4c24f638",
+        "Name": "21ca7617-1516-4174-8446-553a4c24f638",
+        "properties": {
+          "DisplayName": "mroyster",
+          "ObjectType": "User",
+          "PrincipalId": "144f9574-5c5a-4bb7-b0d9-414781f367d7",
+          "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+          "RoleDefinitionName": "Owner"
+        },
+        "ResourceType": "Microsoft.Authorization/roleAssignments"
+      }
+    }
+  }
+}
